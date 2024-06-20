@@ -20,7 +20,7 @@ class TemperatureConverter(QWidget):
         self.convert_button = QPushButton('Convert')
         self.close_button = QPushButton('Close')
         self.convert_button.clicked.connect(self.convert_temperature)
-        self.close_button.clicked.connect(self.Close)
+        self.close_button.clicked.connect(self.close)
         
         self.temperature = QComboBox()
         self.temperature.addItems(['degrees celsius', 'degrees kelvin', 'degrees fahrenheit'])
@@ -68,10 +68,6 @@ class TemperatureConverter(QWidget):
         self.result.setText(result)
         self.text.clear()
         
-    def Close(self):
-        
-        self.parent().close()
-
 def spliting(x):
     return x.split()
 
