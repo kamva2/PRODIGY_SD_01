@@ -16,26 +16,26 @@ def main():
         kelvin = float_temp + 273.15
         fahrenheit = (float_temp * 9/5) + 32
         
-        print(f"The temperature is {round(kelvin,2)}K in Kelvin.")
-        print(f"The temperature is {round(fahrenheit,2)}F in Fahrenheits.")
+        print(f"The temperature is {round(kelvin,2)}K in degree Kelvin.")
+        print(f"The temperature is {round(fahrenheit,2)}F in degree Fahrenheits.")
         
-    elif str_temp == "kelvin":
+    elif str_temp == "degree kelvin":
         
         degree_c = float_temp - 273.15
         fahrenheit = (float_temp -273.15) * 5/9 + 32
         
         print(f"The temperature is {round(degree_c,2)}C in degree celsius.")
-        print(f"The temperature is {round(fahrenheit,2)}F in Fahrenheits.")
+        print(f"The temperature is {round(fahrenheit,2)}F in degree Fahrenheits.")
         
-    elif str_temp == "fahrenheit":
+    elif str_temp == "degree fahrenheit":
     
         degree_c = (float_temp - 32) * 5/9
         kelvin = (float_temp - 32) * 5/9 + 273.15
         
         print(f"The temperature is {round(degree_c,2)}C in degree celsius.")
-        print(f"The temperature is {round(kelvin,2)}K in kelvin.")
+        print(f"The temperature is {round(kelvin,2)}K in degree kelvin.")
         
     else:
-        print("Please enter (kelvin, fahrenheit, degree celsius) temperature!!!")
+        print("Please enter (degree kelvin, degree fahrenheit, degree celsius) temperature!!!")
     
 main()
